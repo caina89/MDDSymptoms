@@ -40,14 +40,49 @@ semPlotModel_GSEM=function(gsem.object=GWISoutput , est.label="STD_All"){
        return(semModel)
        
 }
-
-## plot SEM plots 
-forplots=c("WE.LifetimeMDD.genomicSEM.gCFAofEFA2","PHQ9.LifetimeMDD.genomicSEM.gCFAofEFA2","PHQ9SkipA1A2.LifetimeMDD.genomicSEM.gCFAofEFA2")
-for (file in forplots){
-       print(file)
-       load(paste0(file,".RData"))
-       pdf(paste0(file,".pdf"),height=3,width=3,useDingbats=FALSE)
-       semPaths(semPlotModel_GSEM(gCFAofEFA2),layout="tree2",style="OpenMx",whatLabels = "est")
-       dev.off()
+## plot CFA for EFA1
+symptoms=c("WE","PHQ9","PHQ9SkipA1A2")
+cohorts=c("LifetimeMDD","PGC29","iPSYCH2012","iPSYCH2015i")
+for (symptom in symptoms){
+       print(symptom)
+       for (cohort in cohorts){
+              print(cohort)
+              file=paste0(symptom,".",cohort,".genomicSEM.gCFAofEFA1")
+              load(paste0(file,".RData"))
+              pdf(paste0(file,".pdf"),height=3,width=3,useDingbats=FALSE)
+              semPaths(semPlotModel_GSEM(gCFAofEFA1),layout="tree2",style="OpenMx",whatLabels = "est")
+              dev.off()        
+       }
 }
+## plot CFA for EFA2
+symptoms=c("WE","PHQ9","PHQ9SkipA1A2")
+cohorts=c("LifetimeMDD","PGC29","iPSYCH2012","iPSYCH2015i")
+for (symptom in symptoms){
+       print(symptom)
+       for (cohort in cohorts){
+              print(cohort)
+              file=paste0(symptom,".",cohort,".genomicSEM.gCFAofEFA2")
+              load(paste0(file,".RData"))
+              pdf(paste0(file,".pdf"),height=3,width=3,useDingbats=FALSE)
+              semPaths(semPlotModel_GSEM(gCFAofEFA2),layout="tree2",style="OpenMx",whatLabels = "est")
+              dev.off()        
+       }
+}
+## plot CFA for EFA3
+symptoms=c("WE","PHQ9","PHQ9SkipA1A2")
+cohorts=c("LifetimeMDD","PGC29","iPSYCH2012","iPSYCH2015i")
+for (symptom in symptoms){
+       print(symptom)
+       for (cohort in cohorts){
+              print(cohort)
+              file=paste0(symptom,".",cohort,".genomicSEM.gCFAofEFA3")
+              if (file.exists(paste0(file,".RData"))){
+                     load(paste0(file,".RData"))
+                     pdf(paste0(file,".pdf"),height=3,width=3,useDingbats=FALSE)
+                     semPaths(semPlotModel_GSEM(gCFAofEFA3),layout="tree2",style="OpenMx",whatLabels = "est")
+                     dev.off()
+              }
+       }
+}
+
 
