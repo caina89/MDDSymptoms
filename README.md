@@ -26,7 +26,10 @@ ldsc/ldsc.py --h2 $mungefile.sumstats.gz --ref-ld-chr $reffile --w-ld-chr $reffi
 ```
 
 ## Genetic Correlation
-
+All genetic correlation estimation in the paper are performed using [ldsc](https://github.com/bulik/ldsc)
+```
+ldsc/ldsc.py --rg munge1.sumstats.gz,munge2.sumstats.gz --ref-ld-chr $reffile --w-ld-chr $reffile --samp-prev $prev1,$prev2 --pop-prev $prev1,$prev2 --out $outfile
+```
 
 
 ## PRS
