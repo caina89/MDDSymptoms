@@ -6,7 +6,7 @@ library(tidyr)
 rm(list=ls())
 
 # read data
-data=fread("/no-backup/lianyun/20220222_plot_mddsymptomspaper/data/fig3_rg_lifetime_lencurrent_4in1.csv")
+data=fread("/path/fig3_rg_lifetime_lencurrent_4in1.csv")
 data=data.frame(data)
 
 df=cbind(
@@ -112,12 +112,9 @@ t.test(x=dfpositive$lencurrent,y=dfpositive$lifetime,alternative="greater",mu=0,
 
 
 ### ------
-# uvmr symp to/ from neuro, anxiety, trauma, stress
+# paired t-test uvmr symp to/from neuro, anxiety, trauma, stress
 
-
-path_input="/no-backup/lianyun/20220222_plot_mddsymptomspaper/tmp"
 title_vec=c("neuro","anxiety","trauma","stress")
-#title_vec=c("trauma") 
 
 # for trauma, it looks like many significant arrows for phq in the plot, but only a few for worst.
 # but it's not significant in the t-test
@@ -306,7 +303,7 @@ t_test_df_symp2mdd
 
 
 ### ------
-# uvmr symptoms from/to pgc, ipsych2012, ipsych2015
+# paired t-test uvmr symptoms from/to pgc, ipsych2012, ipsych2015
 
 datasets=c("pgcmdd","ipsych2012","ipsych2015i")
 
