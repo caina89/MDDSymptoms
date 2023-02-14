@@ -14,7 +14,7 @@ plink2 --bfile $bfile --pheno $pfile --1 --logistic hide-covar --covar-variance-
 
 ## Summary statistics 
 
-All summary statistics of GWAS described in the paper (WorstEpisode, dsWorstEpisode, PHQ9, dsPHQ9, PHQ9Skip, LifetimeMDD) are available [here](link_to_figshare)
+All summary statistics of GWAS described in the paper (WorstEpisode, dsWorstEpisode, PHQ9, dsPHQ9, PHQ9Skip, LifetimeMDD) are available [here](10.6084/m9.figshare.22041212)
 
 ## Heritability
 All heritability estimation in the paper are performed using [ldsc](https://github.com/bulik/ldsc)
