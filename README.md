@@ -82,6 +82,6 @@ R scripts for gathering and summarising PRS prediction R2s across folds are in t
 
 R scipts for [genomicSEM](https://github.com/GenomicSEM/GenomicSEM) analyses are in the ```genomicSEM``` directory:
 
-```genomicSEM.MDD.R```: script used to gather R2s from all fold predictions 
-```EFACFA.MDD.R```: script used to gather R2s from all fold predictions 
+```genomicSEM.MDD.R```: script for running genomicSEM
+```EFACFA.MDD.R```: script for EFA and CFA 
 ```plotCFA.MDD.R```: plotting scripts   
