@@ -14,7 +14,7 @@ plink2 --bfile $bfile --pheno $pfile --1 --logistic hide-covar --covar-variance-
 
 ## Summary statistics 
 
-All summary statistics of GWAS described in the paper (WorstEpisode, dsWorstEpisode, PHQ9, dsPHQ9, PHQ9Skip, LifetimeMDD) are available [here](10.6084/m9.figshare.22041212)
+All summary statistics of GWAS described in the paper (WorstEpisode, dsWorstEpisode, PHQ9, dsPHQ9, PHQ9Skip, LifetimeMDD) are available [here](https://doi.org/10.6084/m9.figshare.22041212)
 
 ## Heritability
 All heritability estimation in the paper are performed using [ldsc](https://github.com/bulik/ldsc)
@@ -30,6 +30,5 @@ All genetic correlation estimation in the paper are performed using [ldsc](https
 ```
 ldsc/ldsc.py --rg munge1.sumstats.gz,munge2.sumstats.gz --ref-ld-chr $reffile --w-ld-chr $reffile --samp-prev $prev1,$prev2 --pop-prev $prev1,$prev2 --out $outfile
 ```
-
 
 ## PRS
