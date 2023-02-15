@@ -74,10 +74,6 @@ PRSice_linux --base $a.ma --cov $covar --num-auto 22 \
 done 
 ```
 
-## PRS Pleiotropy 
-
-R scripts for gathering and summarising PRS prediction R2s across folds are in the ```PRS_pleio``` directory:
-
 ## genomicSEM 
 
 R scipts for [genomicSEM](https://github.com/GenomicSEM/GenomicSEM) analyses are in the ```genomicSEM``` directory:
