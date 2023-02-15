@@ -78,8 +78,10 @@ done
 
 R scripts for gathering and summarising PRS prediction R2s across folds are in the ```PRS_pleio``` directory:
 
-### PRS Pleiotropy analysis 
+## genomicSEM 
 
-```getdata.R```: script used to gather R2s from all fold predictions 
-```utilities.R```: misc functions  
+R scipts for [genomicSEM](https://github.com/GenomicSEM/GenomicSEM) analyses are in the ```genomicSEM``` directory:
 
+```genomicSEM.MDD.R```: script used to gather R2s from all fold predictions 
+```EFACFA.MDD.R```: script used to gather R2s from all fold predictions 
+```plotCFA.MDD.R```: plotting scripts   
