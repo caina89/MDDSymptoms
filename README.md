@@ -31,4 +31,12 @@ All genetic correlation estimation in the paper are performed using [ldsc](https
 ldsc/ldsc.py --rg munge1.sumstats.gz,munge2.sumstats.gz --ref-ld-chr $reffile --w-ld-chr $reffile --samp-prev $prev1,$prev2 --pop-prev $prev1,$prev2 --out $outfile
 ```
 
-## PRS
+## PRS Pleiotropy 
+
+R scripts for gathering and summarising PRS prediction R2s across folds are in the ```PRS_pleio``` directory:
+
+### PRS Pleiotropy analysis 
+
+```getdata.R```: script used to gather R2s from all fold predictions 
+```utilities.R```: misc functions  
+
