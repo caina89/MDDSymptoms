@@ -1,5 +1,5 @@
 # MDDSymptoms
-Code to reproduce analyses in the MDD symptoms paper: link_to_paper
+Code to reproduce analyses in the MDD symptoms paper: [Huang L. et al., Polygenic Analyses Show Important Differences Between Major Depressive Disorder Symptoms Measured Using Various Instruments. Biological Psychiatry (2024)](https://www.sciencedirect.com/science/article/pii/S000632232301750X)
 
 ## GWAS 
 
